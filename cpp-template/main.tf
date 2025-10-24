@@ -12,7 +12,7 @@ data "coder_workspace" "me" {}
 
 variable "image" {
   type    = string
-  default = "ghcr.io/computercodeblue/cpp-dev:latest"
+  default = "ghcr.io/rb-aces-cs/cpp-dev:latest"
 }
 
 variable "cpu_limit" {

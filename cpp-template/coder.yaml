@@ -1,0 +1,7 @@
+name: "C++ Workspace"
+description: "Ubuntu 24.04 workspace for learning C++ with clang, g++, and VS Code in the browser."
+tags: ["cpp", "education", "ubuntu", "code-server"]
+default_image: "ghcr.io/computercodeblue/cpp-dev:latest"
+maintainers:
+  - name: "Chris Burke"
+    email: "chris@computercodeblue.com"

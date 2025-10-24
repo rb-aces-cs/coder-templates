@@ -23,7 +23,7 @@ RUN code-server --install-extension llvm-vs-code-extensions.vscode-clangd && \
 
 # Copy starter files
 USER root
-COPY project /usr/local/share/template
+COPY cpp-template/project /usr/local/share/template
 RUN chown -R $USER:$USER /usr/local/share/template
 USER $USER
 

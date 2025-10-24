@@ -25,7 +25,7 @@ variable "memory_mb" {
   default = 2048
 }
 
-resource "docker_container" "dev" {
+resource "docker_container" "main" {
   name  = "coder-${data.coder_workspace.me.name}"
   image = var.image
   memory = var.memory_mb * 1024 * 1024
@@ -39,7 +39,7 @@ resource "docker_container" "dev" {
   restart = "unless-stopped"
 }
 
-resource "coder_agent" "dev" {
+resource "coder_agent" "main" {
   os   = "linux"
   arch = "amd64"
 
